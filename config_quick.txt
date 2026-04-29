@@ -1,0 +1,7 @@
+Arena_Size:20 20
+Max_Rounds:5000
+Sleep_interval:0
+Game_State_Live:false
+Flamethrowers:5
+Pits:5
+Mounds:5

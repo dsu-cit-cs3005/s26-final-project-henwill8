@@ -211,7 +211,8 @@ int main(int argc, char* argv[])
         std::cerr << "Invalid robot filename. Use a local filename like Robot_MyBot.cpp\n";
         return 1;
     }
-    const std::string shared_lib = "lib" + robot_file.substr(0, robot_file.find(".cpp")) + ".so";
+    const std::string shared_lib =
+        "./lib" + robot_file.substr(0, robot_file.find(".cpp")) + ".so";
 
     // Compile the robot into a shared library -fPIC is Position Independant Code - look it up!
     // we're also linking a pre-compiled RobotBase.o - problems will arise if there is a mismatch...
